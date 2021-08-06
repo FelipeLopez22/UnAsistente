@@ -41,6 +41,7 @@ public class AgregarCita {
 		
 	} while (!t.equalsIgnoreCase("t"));
 	scan.close();
+	//Hola muchachos
 }}
 	
 	

@@ -17,7 +17,7 @@ public class Menu {
 
 			break;
 
-		default:System.out.println("EN PROCESO");
+		default:System.out.println("Vuelva a iniciar usando mayusculas");
 			break;
 		}
 		scanMenu.close();
@@ -55,10 +55,10 @@ public class Menu {
 							// datos con atributo el ID, y metodo el agregar
 					AgregarCita.Agregar();
 					break;
-				case "C":System.out.println("EN PROCESO");
-
+				case "C":
+					AgregarCita3.Agregar();
 					break;
-				default:System.out.println("EN PROCESO");
+				default:System.out.println("Vuelva a iniciar usando mayusculas");
 					break;
 				}
 
@@ -70,10 +70,10 @@ public class Menu {
 						// datos con atributo el ID, y metodo el agregar
 				AgregarCita2.Agregar();
 				break;
-			case "C":System.out.println("EN PROCESO");
-
+			case "C":
+				AgregarCita4.Agregar();
 				break;
-			default:System.out.println("EN PROCESO");
+			default:System.out.println("Vuelva a iniciar usando mayusculas");
 				break;
 			}
 
@@ -93,10 +93,10 @@ public class Menu {
 						// datos con atributo el ID, y metodo el agregar
 				AgregarCita.Agregar();
 				break;
-			case "C":System.out.println("EN PROCESO");
-
+			case "C":
+				AgregarCita3.Agregar();
 				break;
-			default:System.out.println("EN PROCESO");
+			default:System.out.println("Vuelva a iniciar usando mayusculas");
 				break;
 			}
 			break;
@@ -107,13 +107,13 @@ public class Menu {
 					// datos con atributo el ID, y metodo el agregar
 			AgregarCita2.Agregar();
 			break;
-		case "C":System.out.println("EN PROCESO");
-
+		case "C":
+			AgregarCita4.Agregar();
 			break;
-		default:System.out.println("EN PROCESO");
+		default:System.out.println("Vuelva a iniciar usando mayusculas");
 			break;
 		}
-		default:
+		default:System.out.println("Vuelva a iniciar usando mayusculas");
 			break;
 		}
 

@@ -44,10 +44,10 @@ public class Menu {
 		TipoCita = scan.nextLine();
 		switch (TipoCita) {
 		case "D":
-			System.out.println("Digite: N para una cita narrativa, y P para una cita entre paréntesis");
+			System.out.println("Digite: H para una cita narrativa, y T para una cita entre paréntesis");
 			String TipoDirecta = scan.nextLine();
 			switch (TipoDirecta) {
-			case "N":
+			case "H":
 				System.out.println("Digite: L para una cita de más de 40 palabras, y C para una cita de menos de 40 palabras");
 				String Extension = scan.nextLine();
 				switch (Extension) {
@@ -63,19 +63,62 @@ public class Menu {
 				}
 
 				break;
-			case "P":System.out.println("EN PROCESO");
+			case "T":System.out.println("Digite: L para una cita de más de 40 palabras, y C para una cita de menos de 40 palabras");
+			String Extension2 = scan.nextLine();
+			switch (Extension2) {
+			case "L":// Ejecutar base de datos con una identidad de cita, dirige a una clase base de
+						// datos con atributo el ID, y metodo el agregar
+				AgregarCita2.Agregar();
+				break;
+			case "C":System.out.println("EN PROCESO");
 
+				break;
+			default:System.out.println("EN PROCESO");
+				break;
+			}
+
+			break;
+			}
+			break;
+			
+
+		case "P": System.out.println("Digite: H para una cita narrativa, y T para una cita entre paréntesis");
+		String TipoParafraseada = scan.nextLine();
+		switch (TipoParafraseada) {
+		case "H":
+			System.out.println("Digite: L para una cita de más de 40 palabras, y C para una cita de menos de 40 palabras");
+			String Extension2 = scan.nextLine();
+			switch (Extension2) {
+			case "L":// Ejecutar base de datos con una identidad de cita, dirige a una clase base de
+						// datos con atributo el ID, y metodo el agregar
+				AgregarCita.Agregar();
+				break;
+			case "C":System.out.println("EN PROCESO");
+
+				break;
+			default:System.out.println("EN PROCESO");
 				break;
 			}
 			break;
-
-		case "P":System.out.println("EN PROCESO");
+		case "T":System.out.println("Digite: L para una cita de más de 40 palabras, y C para una cita de menos de 40 palabras");
+		String Extension3 = scan.nextLine();
+		switch (Extension3) {
+		case "L":// Ejecutar base de datos con una identidad de cita, dirige a una clase base de
+					// datos con atributo el ID, y metodo el agregar
+			AgregarCita2.Agregar();
 			break;
+		case "C":System.out.println("EN PROCESO");
+
+			break;
+		default:System.out.println("EN PROCESO");
+			break;
+		}
 		default:
 			break;
 		}
 
 		scan.close();
 
+	}
 	}
 }
